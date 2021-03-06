@@ -9,7 +9,7 @@ def graph(pi, numbers):
     #bar labels
     tick_label = [str(t) for t in x]
 
-    plt.bar(x, y, tick_label = tick_label)
+    plt.bar(x, y, tick_label=tick_label)
 
     # naming the x axis
     plt.xlabel('x - axis')
