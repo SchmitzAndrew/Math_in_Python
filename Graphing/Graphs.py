@@ -18,11 +18,11 @@ def polynomial():
     poly_y_axis = [y ** degree for y in range(-10, 10, 1)]
 
     plt.plot(poly_x_axis, poly_y_axis)
-    plt.plot()
+    plt.show()
 
 
 # choose:
-choice = int(input("Which graph?"))
+choice = int(input("Which graph? "))
 if choice == 1:
     modulus()
 elif choice == 2:
