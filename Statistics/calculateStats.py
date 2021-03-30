@@ -1,5 +1,5 @@
 import math
-
+from collections import Counter
 class Statistics:
     def __init__(self, statsList):
         self.statsList = statsList
@@ -38,7 +38,8 @@ class Statistics:
             return (medianList[index] + medianList[index + 1]) / 2.0
 
     def mode(self):
-        pass
+        c = Counter(self.statsList)
+        return [k for k, v in c.items() if v == c.most_common(1)[0][1]]
 
 
 

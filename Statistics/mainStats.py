@@ -9,3 +9,4 @@ stats = Statistics(statsList)
 
 print(stats.average())
 print(stats.standardDeviation())
+print(stats.median())
