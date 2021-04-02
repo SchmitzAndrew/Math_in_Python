@@ -1,5 +1,5 @@
 # Analyzes the digits of pi
-from pianalysis import graph
+from analyzePi import graph
 
 f = open("pi.txt", "r")
 pi = f.read()
