@@ -1,10 +1,7 @@
 import math
 from collections import Counter
 import matplotlib.pyplot as plt
-from numpy import polyfit as np
-
-
-
+import numpy as np
 
 class Statistics:
     def __init__(self, statsList, coordinatesList):
@@ -51,17 +48,21 @@ class Statistics:
         return [k for k, v in c.items() if v == c.most_common(1)[0][1]]
 
     def bestFit(self):
-        bestFit_x_axis = np.array([])
-        bestFit_y_axis = np.array([])
+        bestFit_x_axis = []
+        bestFit_y_axis = []
         for i in range(len(self.coordinatesList)):
-            np.append(bestFit_x_axis, self.coordinatesList[i].x)
-            np.append(bestFit_y_axis, self.coordinatesList[i].y)
+            bestFit_x_axis.append(self.coordinatesList[i].x)
+            bestFit_y_axis.append(self.coordinatesList[i].y)
 
-        m, b = np.polyfit(bestFit_x_axis, bestFit_y_axis, 1)
+        numpy_X = np.array(bestFit_x_axis)
+        numpy_Y = np.array(bestFit_y_axis)
+        m, b = np.polyfit(numpy_X, numpy_Y, 1)
 
         plt.plot(bestFit_x_axis, bestFit_y_axis, 'o')
 
-        plt.plot(bestFit_x_axis, m * bestFit_x_axis + b)
+        plt.plot(bestFit_x_axis, m * numpy_X + b)
+
+        plt.show()
 
 
 

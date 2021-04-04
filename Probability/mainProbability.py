@@ -1,14 +1,19 @@
-from methodsProbability import *;
+from methodsProbability import *
 
 print("Proability Methods")
 
 selection = int(input("Enter the method to call: "))
 
-if selection == 1:
 
+prob = Probabilty(.50, .30, 5, 30)
 
-elif selection == 2 :
-
-
-else:
-    print("Not a valid selection")
+print(prob.chance(5, 30))
+print(prob.independent_events(.50, .30))
+# if selection == 1:
+#
+#
+# elif selection == 2 :
+#
+#
+# else:
+#     print("Not a valid selection")

@@ -9,17 +9,16 @@ statsList = list(statsStr.split("\n"))
 del statsList[-1]
 
 
-
 #Creates list of coordinates
 coordinatesList = generate_coordinates(15, 15, 25)
-
-selection = int(input("Enter the method to call: "))
 
 #Creates Stats Object
 stats = Statistics(statsList, coordinatesList)
 
 print("1- Single Var Stats: ")
 print("2 - Best Fit: ")
+
+selection = int(input("Enter the method to call: "))
 
 if selection == 1:
     print(stats.average())
