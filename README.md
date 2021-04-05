@@ -4,10 +4,14 @@ Math in Python
 A collection of some math functions. 
 
 Graphing
+
 Pi
+
 Probabilty
   >Dependent v. Independent
+
 Recursion
+
 Statistics
   >Normal Models
   >Best Fit
