@@ -4,6 +4,8 @@ Math in Python
 A collection of some math functions. 
 
 Graphing
+ >Plots
+ >3-D Graphs 
 
 Pi
 
