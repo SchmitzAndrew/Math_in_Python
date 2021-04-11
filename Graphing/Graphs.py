@@ -21,9 +21,4 @@ def polynomial():
     plt.show()
 
 
-# choose:
-choice = int(input("Which graph? "))
-if choice == 1:
-    modulus()
-elif choice == 2:
-    polynomial()
+

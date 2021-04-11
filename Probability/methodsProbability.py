@@ -9,7 +9,7 @@ class Probabilty:
         self.dependent = dependent
 
     def chance(self, outcome, possibilities):
-        return outcome/ possibilities
+        return outcome / possibilities
 
 
     def events(self, A, B, dependent):
@@ -19,6 +19,5 @@ class Probabilty:
             return A * B #mutually exclusive
 
 
-
     def conditional_probability(self, A, B, dependent):
-        return events(self, A, B, dependent) / B
+        return self.events(self, A, B, dependent) / B

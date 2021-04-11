@@ -9,11 +9,4 @@ prob = Probabilty(.50, .30, 5, 30)
 
 print(prob.chance(5, 30))
 print(prob.independent_events(.50, .30))
-# if selection == 1:
-#
-#
-# elif selection == 2 :
-#
-#
-# else:
-#     print("Not a valid selection")
+
