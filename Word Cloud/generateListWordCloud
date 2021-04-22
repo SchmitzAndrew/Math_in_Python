@@ -1,0 +1,5 @@
+import random
+
+possible_words = ["Daft Punk", "Eric Andre", "Kraft Punk", "Aphex Twin", "Charlie Brown", "Bill Watterson" ]
+
+for i in range(10000)
