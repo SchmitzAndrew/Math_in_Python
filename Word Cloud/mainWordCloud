@@ -5,4 +5,15 @@ from PIL import Image
 from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 
 import matplotlib.pyplot as plt
-% matplotlib inline
+
+
+from generateListWordCloud import create_words
+
+word_list = create_words()
+word_list = pd.DataFrame[word_list]
+
+word_cloud = WordCloud().generate(word_list)
+
+plt.imshow(word_cloud, interpolation='bilinear')
+plt.axis("off")
+plt.show()
